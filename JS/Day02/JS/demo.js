@@ -188,3 +188,25 @@
 // console.log(Math.floor(Math.random() * 10));
 // console.log(Math.max());
 // console.log(Math.ceil(5.1));
+
+// var str = "ali";
+
+// [].join().bind(str);
+
+// let person = {
+// 	fname: "ali",
+// 	display: function (x, y) {
+// 		console.log(this.fname);
+// 	},
+// };
+
+// let person2 = {
+// 	fname: "alaa",
+// };
+
+// person.display();
+// person.display.call(person2, "x", "y");
+// person.display.apply(person, ["x2", "y3"]);
+// var result = person.display.bind(person2);
+
+// result();
