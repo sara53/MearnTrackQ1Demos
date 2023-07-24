@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+p{
+    background-color: #eee;
+    padding: 10px;
+}
+
+div{
+    background-color: p;
+}
+
+.myP{
+    background-color: red;
+}
+img{
+    width: 200px;
+    object-fit: cover;
+}
+button{
+    cursor: pointer;
+    background-color: orange;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin:10px
+}
+input[type='text']{
+    width: 170px;
+    padding: 5px;
+    margin:10px;
+    outline: 0;
+}
+
+.p1{
+    font-size: 30px;
+}
+
+.jsClass{
+    background-color: pink;
+}
