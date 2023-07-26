@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* p{
+    background-color: #eee;
+    padding: 10px;
+} */
+
+p#errorMsg{
+    color:red;
+    padding: 10px;
+    display: none
+}
+p#result{
+display: none;
+}
+div{
+    background-color: p;
+}
+
+.myP{
+    background-color: red;
+}
+img{
+    width: 200px;
+    object-fit: cover;
+}
+button{
+    cursor: pointer;
+    background-color: rgb(151, 159, 219);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin:10px;
+    display: block;
+    width: 180px;
+}
+input[type='text']{
+    width: 170px;
+    padding: 5px;
+    margin:10px;
+    outline: 0;
+}
+
+.p1{
+    font-size: 30px;
+}
+
+.jsClass{
+    background-color: pink;
+}
+
+div.first{
+    width: 300px;
+    height: 300px;
+    background-color: black;
+}
+div.second{
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+}
+div.third{
+    width: 100px;
+    height: 100px;
+    background-color: blueviolet;
+}
