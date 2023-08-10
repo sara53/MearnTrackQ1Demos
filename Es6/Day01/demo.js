@@ -236,12 +236,27 @@
 
 // let result = products.filter((product) => product.id != 1);
 // console.log(result);
-var tracks = ["SD", "SOS", "SFront", "Mearn", "SPHP"];
+// var tracks = ["SD", "SOS", "SFront", "Mearn", "SPHP"];
 
-var result = tracks.every((track) => track.startsWith("S"));
-console.log(result);
+// var result = tracks.every((track) => track.startsWith("S"));
+// console.log(result);
 // var result = tracks.foreach((track, index) => {
 // 	console.log(`${index} : ${track}`);
 // });
 
 // console.log(result);
+
+// var a1 = 10;
+// function run() {
+// 	function slow() {
+// 		console.log(a1);
+// 	}
+// 	exec(slow);
+// }
+
+// function exec(func) {
+// 	var a1 = 30;
+// 	func();
+// }
+// run();
+/**=============  ========== */
