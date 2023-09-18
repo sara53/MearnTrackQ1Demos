@@ -1,3 +1,15 @@
 1- install nodejs
 2- npm i -g typescript 
 3- tsc filename.ts -w
+
+--------------------------------------
+4- npm i -g @angular/cli
+5- ng new projectName
+6- ng server -o
+(npm start)
+
+----------------------------------
+ to gernerate component 
+ 1- ng g c componentName --skip-tests
+
+
