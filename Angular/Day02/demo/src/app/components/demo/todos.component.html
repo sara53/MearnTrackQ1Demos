@@ -1,0 +1,32 @@
+<div class="bg-dark p-5 text-center text-light">
+  <h1>Todos List</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-9">
+        <input
+          type="text"
+          name="taskName"
+          [(ngModel)]="taskName"
+          class="form-control"
+          placeholder="Enter Your Task"
+        />
+      </div>
+      <div class="col-3">
+        <button class="btn btn-outline-warning" (click)="addToTodos()">
+          +
+        </button>
+      </div>
+    </div>
+    <div class="row mt-3" *ngFor="let todo of todosList; let i = index">
+      <div class="col-9">
+        <p class="bg-secondary p-2 rounded">{{ todo }}</p>
+      </div>
+      <div class="col-3">
+        <button class="btn btn-outline-danger" (click)="removeTodo(i)">
+          -
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

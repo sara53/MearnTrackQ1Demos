@@ -1,0 +1,18 @@
+<div class="bg-light p-5 text-center">
+  <h1>Hello Test Component</h1>
+  <div class="container">
+    <h2 #myElement>Hello mearn track</h2>
+    <div class="row">
+      <input
+        #myInput
+        type="text"
+        (input)="getInputValue(myInput)"
+        class="form-control"
+        placeholder="Enter Your Name"
+      />
+
+      <button (click)="show()" class="btn btn-dark mt-4">Click</button>
+      <p class="lead mt-5">{{ inputValue }}</p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+<div class="bg-dark p-5 text-center text-light">
+  <div class="container">
+    <div class="row">
+      <h2>Content Component</h2>
+      <input
+        class="form-control"
+        type="text"
+        name="studentName"
+        placeholder="Enter Your Name"
+        value=""
+        [(ngModel)]="studentName"
+      />
+      <select class="mt-3" name="choose" [(ngModel)]="selectValue">
+        <option>Html</option>
+        <option>Css</option>
+        <option>JS</option>
+      </select>
+
+      <h3>{{ selectValue }}</h3>
+      <p class="mt-5 lead fs-2">student Name : {{ studentName }}</p>
+    </div>
+  </div>
+</div>

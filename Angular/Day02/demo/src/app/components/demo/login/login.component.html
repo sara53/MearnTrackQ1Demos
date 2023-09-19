@@ -1,0 +1,43 @@
+<div class="bg-light p-5">
+  <div class="container">
+    <div class="row">
+      <form class="row g-3" (submit)="login($event)">
+        <div class="col-md-4">
+          <label for="studentName" class="form-label">Student name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="studentName"
+            placeholder="Enter Student Name"
+            value=""
+            name="studentName"
+            [ngClass]="{
+              'is-valid': isStudentNameValid,
+              'is-invalid': !isStudentNameValid && !isStudentNameEmpty
+            }"
+            [(ngModel)]="studentName"
+          />
+          <div class="valid-feedback">Success Message</div>
+          <div class="invalid-feedback">Length must be than 3</div>
+        </div>
+        <div class="col-md-4">
+          <label for="age" class="form-label">Student Age</label>
+          <input
+            type="text"
+            class="form-control"
+            id="age"
+            value=""
+            placeholder="Enter Student Age"
+            name="studentAge"
+            [(ngModel)]="studentAge"
+          />
+          <div class="valid-feedback">Looks good!</div>
+        </div>
+
+        <div class="col-12">
+          <button class="btn btn-dark" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
