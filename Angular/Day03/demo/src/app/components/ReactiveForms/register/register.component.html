@@ -1,0 +1,55 @@
+<div class="bg-light p-5">
+  <div class="container">
+    <div class="row">
+      <form [formGroup]="registerForm" (submit)="register($event)">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">User name</label>
+          <input
+            type="text"
+            formControlName="username"
+            class="form-control"
+            placeholder="Enter username"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+          />
+          <ng-container *ngIf="getUsername.touched">
+            <div
+              id="emailHelp"
+              *ngIf="getUsername.hasError('required')"
+              class="form-text text-danger"
+            >
+              username is required
+            </div>
+            <div
+              id="emailHelp"
+              *ngIf="getUsername.hasError('minlength')"
+              class="form-text text-danger"
+            >
+              username length must be > 4
+            </div>
+          </ng-container>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">User age</label>
+          <input
+            formControlName="age"
+            placeholder="Enter Your Age"
+            type="number"
+            class="form-control"
+            id="exampleInputPassword1"
+          />
+          <div id="emailHelp" class="form-text text-danger">
+            {{ getAge.errors | json }}
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-dark">
+          {{ false ? "Register" : "Login" }}
+        </button>
+        <p class="mt-4">
+          {{ registerForm.value | json }}
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
