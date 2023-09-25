@@ -1,0 +1,39 @@
+<div class="bg-dark p-5 text-light mt-5 text-center">
+  <div class="container">
+    <div class="row">
+      <h1>Product Details : {{ productId }}</h1>
+      <p>
+        Product Name :
+        <strong class="fs-3 text-danger">{{
+          product.productName | uppercase
+        }}</strong>
+      </p>
+      <p>
+        Product Price :
+        <strong class="fs-3 text-danger">{{
+          product.price | squareprice : product.quantity
+        }}</strong>
+      </p>
+      <p>
+        Product Quantity :
+        <strong class="fs-3 text-danger">{{ product.quantity }}</strong>
+      </p>
+      <div>
+        <i class="text-warning bi bi-star-fill"></i>
+        <i class="text-warning bi bi-star-fill"></i>
+        <i class="text-warning bi bi-star-fill"></i>
+        <i class="text-warning bi bi-star-fill"></i>
+        <i class="text-warning bi bi-star-fill"></i>
+      </div>
+      <div class="col-4"></div>
+      <div class="col-4">
+        <button
+          [routerLink]="['/products']"
+          class="btn btn-outline-primary mt-4"
+        >
+          Back To Productus
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,49 @@
+<div class="container mt-5">
+  <h1 class="mx-5">
+    {{ productId == 0 ? "Add New Product" : "Edit Product" }}
+  </h1>
+  <form [formGroup]="productForm" (submit)="formOperation($event)">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Product Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleInputEmail1"
+        placeholder="Enter Product Name"
+        aria-describedby="emailHelp"
+        formControlName="productName"
+      />
+      <div id="emailHelp" class="form-text">
+        We'll never share your email with anyone else.
+      </div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"
+        >Product Price</label
+      >
+      <input
+        type="number"
+        placeholder="Enter Product Price"
+        class="form-control"
+        id="exampleInputPassword1"
+        formControlName="price"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label"
+        >Product Quantity</label
+      >
+      <input
+        type="number"
+        placeholder="Enter Product Quantity"
+        class="form-control"
+        id="exampleInputPassword1"
+        formControlName="quantity"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-success">
+      {{ productId == 0 ? "Add New Product" : "Edit Product" }}
+    </button>
+  </form>
+</div>
