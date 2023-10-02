@@ -1,16 +1,10 @@
 {
   "products": [
     {
-      "id": 1,
-      "productName": "Book",
-      "price": 400,
-      "quantity": 20
-    },
-    {
       "id": 2,
-      "productName": "New Product From Server",
+      "productName": "Server updated 4",
       "price": 100,
-      "quantity": 200
+      "quantity": "6000"
     },
     {
       "id": 3,
@@ -23,12 +17,6 @@
       "productName": "Pen",
       "price": 160,
       "quantity": 629
-    },
-    {
-      "productName": "remote updated",
-      "price": 400,
-      "quantity": 10,
-      "id": 5
     }
   ]
 }

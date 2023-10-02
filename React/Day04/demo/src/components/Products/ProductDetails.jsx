@@ -1,7 +1,9 @@
+import axios from 'axios';
+import { async } from 'q';
 import React, { useEffect, useState } from 'react'
 import { NavLink, useParams } from 'react-router-dom'
 
-import { getProductById } from '../../API/productsAPI'
+import { getProductById } from '../../API/ProductWithServer'
 
 export function ProductDetails() {
 
@@ -10,7 +12,16 @@ export function ProductDetails() {
 
 
     useEffect( () => {
-        setProduct( getProductById( id ) )
+
+
+        let fetchData = async () => {
+            const response = await getProductById( id )
+            setProduct( response.data )
+
+        }
+
+        fetchData();
+        // setProduct( getProductById( id ) )
     }, [] )
 
     return (

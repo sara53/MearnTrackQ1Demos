@@ -12,7 +12,7 @@ export const useFetch = (url) => {
 			try {
 				let response = await fetch(url);
 				let data = await response.json();
-				setUsers(data);
+				setData(data);
 				setIsLoading(false);
 			} catch (error) {
 				setIsLoading(false);
